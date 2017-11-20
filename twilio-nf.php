@@ -2,7 +2,7 @@
 require_once 'path/to/your/autoload.php'; 
 use Twilio\Rest\Client;
 
-if(!empty($_GET['msg'])){
+if(empty($_GET['msg'])){
   $msg = "This message is Twilio test msg's.";
 }else{
   $msg = htmlspecialchars($_GET['msg']);
